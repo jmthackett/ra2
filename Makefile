@@ -139,7 +139,7 @@ endif
 	@cd $(ENGINE_DIRECTORY) && make clean
 
 version: check-variables
-	@sh -c '. $(ENGINE_DIRECTORY)/packaging/linux/buildpackage.sh; set_mod_version $(VERSION) $(MANIFEST_PATH)'
+	@sh -c './packaging/linux/buildpackage.sh; set_mod_version $(VERSION) $(MANIFEST_PATH)'
 	@printf "Version changed to $(VERSION).\n"
 
 check-scripts: check-variables
